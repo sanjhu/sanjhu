@@ -1,0 +1,33 @@
+<html>
+
+<head>
+<script>
+var oldvalue= "";
+function invokepage(par1)
+{
+alert('fsdf');
+
+if(oldvalue !=par1 || oldvalue== "" )
+{
+oldvalue =par1;
+window.parent.frames[1].location = "https://www.google.com/search?dictcorpus=en-US&hl=en&forcedict="+ par1+"&q=define%20" + par1
+
+window.parent.frames[2].location = "https://www.thesaurus.com/browse/treasure/" + par1
+window.parent.frames[3].location = "https://www.dictionary.com/browse/" + par1
+}
+}
+
+</script>
+
+</head>
+<body>
+
+
+
+<table > 
+<tr >	<td onclick=invokepage('Infallible')>1	</td><td>	Infallible	</td><td>	????	</td></tr>
+</table>
+
+
+</body>
+</html>
